@@ -1,1 +1,22 @@
-
+[
+  {
+    "id": 1,
+    "nome": "Ana Beatriz de Souza Juglari Oliveira",
+    "turma": "3 DS-A",
+    "tag": "ALUNO-2026-001",
+    "sexo": "F"
+  },
+  {
+     "id": 2,
+    "nome": "Matheus Henrique Pereira Kuchta",
+    "turma": "3 DS-A",
+    "tag": "ALUNO-2026-002",
+    "sexo": "M"
+  },
+  {
+     "id": 3,
+    "nome": "Pedro Miguel Bezerra Klososki",
+    "turma": "3 DS-A",
+    "tag": "ALUNO-2026-003",
+    "sexo": "M"
+  },
