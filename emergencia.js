@@ -160,3 +160,5 @@ window.voltarNormalidade = async function() {
         }
     }
 };
+
+iniciarCronometro();
