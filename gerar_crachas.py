@@ -42,4 +42,23 @@ for aluno in alunos:
   draw = ImageDraw.Draw(cracha)
   # Tenta carregar u,a fonte, se não tiver, usa a padrão
   try:
-      fonte_nome = 
+      fonte_nome = ImageFont.truetype("arial.ttf", 25)
+      fonte_turma = ImageFont.truetype("arial.ttf", 18)
+  except:
+      fonte_nome = ImageFont.load_default()
+      fonte_turma = ImageFont.load_default()
+
+  # Desenhar o Nome
+  draw.text((largura_qr/2, altura_qr + 10), nome, fill="black", font=fonte_nome, anchor="mm")
+  # Desenha a Turma 
+  draw.text((largura_qr/2, altura_qr + 45), nome, fill="gray", font=fonte_turma, anchor="mm")
+
+  # 5. Salvar o arquivo 
+  nome_arquivo = f"{aluno['id']:02d}_{nome.replace(' ', '_')}.png"
+  cracha.save(os.path.join(PASTA_SAIDA, nome_arquivo))
+
+  print(f"\n Sucesso! {len(alunos)} crachás gerados na pasta '{PASTA_SAIDA}'.")
+
+if __name__ == "__main__":
+  gerar_crachas()
+  
