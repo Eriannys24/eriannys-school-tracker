@@ -1,5 +1,5 @@
 import json
-impor qrcode
+import qrcode
 from PIL import Image, ImageDraw, ImageFont
 import os
 
