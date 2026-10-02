@@ -14,7 +14,7 @@ def gerar_cachas():
   try:
     with open(ARQUIVO_JSON,'r', encoding='utf-8') as f:
       alunos = json.load(f)
-      execpt FileNotFoundError:
+  except FileNotFoundError:
       print("Erro: Arquivo alunos.json não encontrado!")
       return
 
